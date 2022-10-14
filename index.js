@@ -10,7 +10,7 @@ client_secret=process.env.client_secret
 client_id=process.env.client_id
 
 
-app.get('/login', async(req, res) => {
+app.get('/api/v1/auth/login', async(req, res) => {
     const userId = req.body.userId;
 
     var authOptions = {
