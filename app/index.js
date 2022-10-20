@@ -5,9 +5,12 @@ const request = require('request');
 app.use(express.json());
 
 
-REDIRECT_URI=process.env.REDIRECT_URI
-client_secret=process.env.client_secret
-client_id=process.env.client_id
+//const REDIRECT_URI = process.env.REDIRECT_URI
+//const client_secret = process.env.CLIENT_SECRET
+//const client_id = process.env.CLIENT_ID
+
+client_secret="bc0e428a348f482681dccf462b97cb69"
+client_id="2794b6bd6f394507a6adbc64159b2e89"
 
 
 app.get('/api/v1/auth/login', async(req, res) => {
